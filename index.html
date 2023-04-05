@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 34. Javascript To-Do</title>
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 mt-3">
+            <button type="button" class="btn btn-success btn-block" onclick="showCard()">Add Board</button>
+
+            <div class="card mt-3 d-none" id="card">
+                <div class="card-body">
+                    <textarea class="form-control" id="board-title" placeholder="Type here"></textarea>
+
+                    <button type="button" class="btn btn-success ml-auto mt-3 d-block" onclick="addBoard()">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="row" id="result"></div>
+        </div>
+    </div>
+</div>
+
+<script src="../Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+<script src="../Bootstrap/js/popper.min.js"></script>
+<script src="../Bootstrap/js/bootstrap.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
